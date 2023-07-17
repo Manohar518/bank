@@ -75,8 +75,8 @@ public class SBIAccount implements BankInterface{
     }
 
     @Override
-    public String withdraw(int amount,String password) {
-        if (enteredPassword.equals(this.password)) {
+    public String withdraw(int amount,String enteredpassword) {
+        if (enteredpassword.equals(this.password)) {
             if (balance < amount) {
                 return "Insufficinet funds";
             } else {
